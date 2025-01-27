@@ -76,22 +76,24 @@ class ProductDetailScreen extends StatelessWidget {
                   IconButton(
                     onPressed: product.quantity > 1
                         ? () => provider.decreaseQuantity(product.id)
-                        : null, 
+                        : null,
                     icon: const Icon(Icons.remove_circle_outline),
                     color: product.quantity > 1
-                        ? Theme.of(context)
-                            .colorScheme
-                            .secondary 
-                        : Theme.of(context).colorScheme.primary, 
+                        ? Theme.of(context).colorScheme.secondary
+                        : Theme.of(context).colorScheme.primary,
                   ),
                   Text(
                     "${product.quantity}",
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   IconButton(
-                    onPressed: () => provider.increaseQuantity(product.id),
+                    onPressed: product.quantity < product.stock
+                        ? () => provider.increaseQuantity(product.id)
+                        : null,
                     icon: const Icon(Icons.add_circle_outline),
-                    color: Theme.of(context).colorScheme.secondary,
+                    color: product.quantity < product.stock
+                        ? Theme.of(context).colorScheme.secondary
+                        : Theme.of(context).colorScheme.primary,
                   ),
                 ],
               ),
