@@ -18,6 +18,7 @@ class ReusableTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10)),
       child: TextFormField(
         obscureText: isObscure,
+        cursorColor: Theme.of(context).colorScheme.inversePrimary,
         decoration: InputDecoration(
             enabledBorder: UnderlineInputBorder(borderSide: BorderSide.none),
             focusedBorder: OutlineInputBorder(
