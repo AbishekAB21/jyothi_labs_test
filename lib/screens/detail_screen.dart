@@ -24,6 +24,7 @@ class ProductDetailScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          
           // Product Image
           Expanded(
             child: Padding(
@@ -47,6 +48,7 @@ class ProductDetailScreen extends StatelessWidget {
               ),
             ),
           ),
+
           // Product Name
           Padding(
             padding: const EdgeInsets.all(16.0),

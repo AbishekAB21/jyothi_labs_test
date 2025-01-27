@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
-        child: Icon(Icons.shopping_bag_rounded, size: 50,),
+        child: Icon(Icons.shopping_bag_rounded, size: 70,),
       ),
     );
   }

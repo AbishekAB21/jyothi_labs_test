@@ -4,7 +4,7 @@ class Fontstyles {
   static TextStyle HintTextStyle(BuildContext context) {
     return TextStyle(
         fontSize: 15,
-        color: Colors.grey.shade700,
+        color: Colors.grey.shade500,
         fontWeight: FontWeight.normal);
   }
 

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:jyothi_labs_test/utils/fontstyles.dart';
 
@@ -5,15 +7,17 @@ class ReusableTextField extends StatelessWidget {
 
   final TextEditingController cntrlr;
   final String hintText;
-  ReusableTextField({super.key, required this.cntrlr, required this.hintText});
+  bool isObscure;
+  ReusableTextField({super.key, required this.cntrlr, required this.hintText, required this.isObscure});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(10)),
       child: TextFormField(
+        obscureText: isObscure,
         decoration: InputDecoration(
             enabledBorder: UnderlineInputBorder(borderSide: BorderSide.none),
             focusedBorder: OutlineInputBorder(
