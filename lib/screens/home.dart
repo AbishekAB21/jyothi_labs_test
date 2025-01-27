@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jyothi_labs_test/providers/log_in_provider.dart';
-import 'package:jyothi_labs_test/screens/log_in.dart';
 import 'package:jyothi_labs_test/utils/fontstyles.dart';
 import 'package:jyothi_labs_test/providers/home_screen_provider.dart';
 import 'package:jyothi_labs_test/widgets/product_card.dart';
-import 'package:jyothi_labs_test/widgets/reusable_snackbar.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -26,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final productProvider = Provider.of<ProductProvider>(context);
-    final authProvider = Provider.of<LoginProvider>(context);
 
     return Scaffold(
       body: Container(

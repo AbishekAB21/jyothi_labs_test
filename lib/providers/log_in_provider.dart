@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:jyothi_labs_test/screens/home.dart';
 
 class LoginProvider with ChangeNotifier {
   bool _isLoading = false;
