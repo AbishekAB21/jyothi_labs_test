@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jyothi_labs_test/providers/home_screen_provider.dart';
+import 'package:jyothi_labs_test/models/product_model.dart';
 
 class DetailScreenProvider with ChangeNotifier {
   final List<Product> _products;

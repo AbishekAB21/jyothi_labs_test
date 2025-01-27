@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jyothi_labs_test/models/product_model.dart';
 import 'package:jyothi_labs_test/screens/detail_screen.dart';
 import 'package:jyothi_labs_test/utils/fontstyles.dart';
-import 'package:jyothi_labs_test/providers/home_screen_provider.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;

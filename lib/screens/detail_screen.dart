@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jyothi_labs_test/models/product_model.dart';
 import 'package:jyothi_labs_test/providers/detail_screen_provider.dart';
 import 'package:jyothi_labs_test/utils/fontstyles.dart';
-import 'package:jyothi_labs_test/providers/home_screen_provider.dart';
 import 'package:provider/provider.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -33,7 +33,7 @@ class ProductDetailScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Image.network(
                   product.thumbnail,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                   errorBuilder: (context, error, stackTrace) {
                     return Container(
                       color: Colors.grey[200],
