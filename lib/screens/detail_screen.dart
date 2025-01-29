@@ -68,7 +68,7 @@ class ProductDetailScreen extends StatelessWidget {
             children: [
               // Product Price
               Text(
-                "Price: \$${product.price.toStringAsFixed(2)}",
+                "Price: \$${product.totalPrice.toStringAsFixed(2)}",
                 style:
                     Fontstyles.BodyTextStyle3(context).copyWith(fontSize: 18),
               ),
